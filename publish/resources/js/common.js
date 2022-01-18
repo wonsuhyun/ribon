@@ -34,6 +34,19 @@ $(document).ready(function(){
 		}
 	})
 
+	$(".mb-header .right span.hamberger").on("click",function(){
+		if($(this).hasClass("close")){
+			$(this).removeClass("close")
+			$(".mb-gnb").removeClass("on")
+			$(body).removeClass("scrollprevent")
+			//$(body).attr("style","height:100vh; overflow:hidden")
+		}else{
+			$(this).addClass("close")
+			$(".mb-gnb").addClass("on")
+			$(body).addClass("scrollprevent")
+		}
+	})
+
 
 })
 
