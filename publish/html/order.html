@@ -11,9 +11,64 @@
     <script type="text/javascript" src="../resources/js/common.js"></script>
     <script type="text/javascript" src="../resources/swiper/dist/js/swiper.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
+    <div class="mb-header tb">
+        <div class="logo"><img src="../resources/img/logo.png"/></div>
+        <div class="right">
+            <span class="mypage"></span>
+            <span class="bag"></span>
+            <span class="hamberger"></span>
+        </div>
+    </div>
+    <div class="mb-gnb">
+        <div class="scroll">
+            <div class="search">
+                <div class="sc-wrap">
+                    <input type="text" placeholder="검색어를 입력하세요"><span><img src="../resources/img/gnb-search.png"  width="100%"></span>
+                </div>
+            </div>
+            <div class="gnb-item">
+                <div>청첩장</div>
+                <div>초특가카드</div>
+                <div>초대장</div>
+                <div>모바일</div>
+                <div>감사장</div>
+                <div>식전영상</div>
+                <div>축하카드</div>
+                <div>부가상품</div>
+                <div>DIY제작</div>
+                <div>연하장<span> (시즌카드)</span></div>
+            </div>
+            <div class="gnb-item">
+                <div>샘플신청</div>
+                <div>구매후기</div>
+                <div>샘플후기</div>
+            </div>
+            <div class="gnb-item">
+                <div>약도검색</div>
+                <div>라벨지출력</div>
+                <div>인사말검색</div>
+            </div>
+            <div class="gnb-item">
+                <div>제작일정</div>
+                <div>초안확인</div>
+                <div>제작가이드</div>
+                <div>초특급제작</div>
+            </div>
+            <div class="gnb-item">
+                <div>칼라인쇄</div>
+                <div>내지 및 별지제작</div>
+                <div>박 가공</div>
+                <div>초특급제작<span> (지방고속버스퀵)</span></div>
+                <div>DM 발송대행</div>
+            </div>
+        </div>
+    </div>
     <div class="container main order">
         <div class="page-top">
             <div class="conts tb">
@@ -98,40 +153,49 @@
         <div class="order-wrap">
             <div class="dual-page clear-fix">
                 <div class="side">
+
                     <div class="pay-box box">
                         <h4>주문금액</h4>
-                        <div class="row">
-                            <div class="tb">
-                                <div>카드단가</div>
-                                <div class="right">1,400원</div>
+                        <div class="arrow">
+                            <img src="../resources/img/order-arrow.png" width="30px">
+                        </div>
+                        <div class="row-wrap">
+                            <div class="row">
+                                <div class="tb">
+                                    <div>카드단가</div>
+                                    <div class="right">1,400원</div>
+                                </div>
+                                <div class="tb">
+                                    <div>할인율</div>
+                                    <div class="right">7%할인</div>
+                                </div>
+                                <div class="tb">
+                                    <div>수량</div>
+                                    <div class="right">950장</div>
+                                </div>
+                                <div class="tb">
+                                    <div>합계금액</div>
+                                    <div class="right">680,000원</div>
+                                </div>
                             </div>
-                            <div class="tb">
-                                <div>할인율</div>
-                                <div class="right">7%할인</div>
-                            </div>
-                            <div class="tb">
-                                <div>수량</div>
-                                <div class="right">950장</div>
-                            </div>
-                            <div class="tb">
-                                <div>합계금액</div>
-                                <div class="right">680,000원</div>
+                            <div class="row btm">
+                                <div class="tb">
+                                    <div>초특급제작</div>
+                                    <div class="right">0원</div>
+                                </div>
+                                <div class="tb">
+                                    <div>추가봉투</div>
+                                    <div class="right">0원</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row btm">
+
+                        <div class="total">
                             <div class="tb">
-                                <div>초특급제작</div>
-                                <div class="right">0원</div>
-                            </div>
-                            <div class="tb">
-                                <div>추가봉투</div>
-                                <div class="right">0원</div>
+                                <div>최종 결제금액</div>
+                                <div class="right red"><span class="price">638,400</span>원</div>
                             </div>
                         </div>
-                        <p class="total">
-                            최종 결제금액<br>
-                            <span class="red"><span class="price">638,400</span>원</span>
-                        </p>
                         <button>주문하기</button>
                     </div>
                 </div>
@@ -157,7 +221,10 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <p>[카드랜드]<br>cq5102</p>
+                                            <div class="tb">
+                                                <div><img src="../resources/img/img-order1png.png" width="100%"></div>
+                                                <div class="left" style="padding-left: 10px;">[카드랜드]<br>cq5102</div>
+                                            </div>
                                         </td>
                                         <td>1400원</td>
                                         <td>
@@ -172,6 +239,34 @@
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <div class="mobile order-info">
+                                <div class="tb t25">
+                                    <div><img src="../resources/img/img-order1png.png" width="100%"></div>
+                                    <div>
+                                        <div class="row-item">
+                                            <span>상품정보</span>
+                                            <span> 카드랜드 cq123</span>
+                                        </div>
+                                        <div class="row-item">
+                                            <span>상품단가</span>
+                                            <span> 14,000원</span>
+                                        </div>
+                                        <div class="row-item">
+                                            <span>주문수량 </span>
+                                            <span> <select><option>100장(15%할인)</option></select></span>
+                                        </div>
+                                        <div class="row-item">
+                                            <span>배송비 </span>
+                                            <span> 무료</span>
+                                        </div>
+                                        <div class="row-item">
+                                            <span>합계금액 </span>
+                                            <span class="red"> 119,000원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -199,6 +294,33 @@
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <div class="mobile">
+                                <div class="tb">
+                                    <div>이름</div>
+                                    <div><input type="text"/></div>
+                                </div>
+                                <div class="tb">
+                                    <div>이메일</div>
+                                    <div><input type="text"/></div>
+                                </div>
+                                <div class="tb">
+                                    <div>일반전화</div>
+                                    <div>
+                                        <input type="text" style="width:30%;"/>-
+                                        <input type="text" style="width:30%;"/>-
+                                        <input type="text" style="width:30%;"/>
+                                    </div>
+                                </div>
+                                <div class="tb">
+                                    <div>휴대전화</div>
+                                    <div>
+                                        <input type="text" style="width:30%;"/>-
+                                        <input type="text" style="width:30%;"/>-
+                                        <input type="text" style="width:30%;"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row option">
@@ -300,21 +422,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row card">
                         <div class="box count">
                             <h4>카드주문 인쇄선택</h4>
                             <table>
                                 <colgroup>
-                                    <col width="25%"/>
-                                    <col width="25%"/>
-                                    <col width="25%"/>
-                                    <col width="25%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
+                                    <col width="20%"/>
                                 </colgroup>
                                 <thead>
                                     <th>총수량</th>
                                     <th>기본인쇄</th>
                                     <th>추가인쇄1</th>
                                     <th>추가인쇄2</th>
+                                    <th>백봉투</th>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -324,9 +448,12 @@
                                         <td>
                                             <input type="text"/> 장
                                         </td>
-                                        <td>
-                                            <input type="text"/> 장
+                                        <td >
+                                            <input type="text" class="addForm1"/> 장
                                         </td>
+                                        <td >
+                                            <input type="text" class="addForm1"/> 장
+                                        </td> 
                                         <td>
                                             <input type="text"/> 장
                                         </td>
@@ -336,7 +463,7 @@
                         </div>
                     </div>
         
-                    <div class="row dual">
+                    <div class="row dual addAreaClone1">
                         <div class="box">
                             <h4>기본인쇄
                                 <span>
@@ -357,7 +484,7 @@
                                 </div>
                                 <div class="el-row">
                                     <div class="el-2 label">신랑정보</div>
-                                    <div class="el-8 float">
+                                    <div class="el-8 float pc">
                                         <div class="p40">
                                             <input  type="checkbox" id="test1"/><label>고인</label> <input type="text" class="small mgb10"/>
                                             <input  type="checkbox" id="test1"/><label>고인</label> <input type="text" class="small"/>
@@ -368,12 +495,26 @@
                                         <div class="p50">
                                             <select class="small mgb10 mgr5"><option>관계</option></select><input type="text" class="small mgb10" />
                                             <input class="small" type="text"/><input type="checkbox" id="test1"/><label class="mgl5">세례명</label>
+                                        </div>
+                                    </div>
+                                    <div class="el-8 mobile info-pr">
+                                        <div>
+                                            <span>부&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>고인</label>
+                                        </div>
+                                        <div>
+                                            <span>모&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>고인</label>
+                                        </div>
+                                        <div>
+                                            <span>&nbsp;&nbsp;&nbsp;</span> <input type="text" class="small"/> <select><option>관계</option></select>
+                                        </div>
+                                        <div>
+                                            <span>&nbsp;&nbsp;&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>세례명</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="el-row">
                                     <div class="el-2 label">신부정보</div>
-                                    <div class="el-8 float">
+                                    <div class="el-8 float pc">
                                         <div class="p40">
                                             <input  type="checkbox" id="test1"/><label>고인</label> <input type="text" class="small mgb10"/>
                                             <input  type="checkbox" id="test1"/><label>고인</label> <input type="text" class="small"/>
@@ -386,12 +527,29 @@
                                             <input class="small" type="text"/><input type="checkbox" id="test1"/><label class="mgl5">세례명</label>
                                         </div>
                                     </div>
+                                    <div class="el-8 mobile info-pr">
+                                        <div>
+                                            <span>부&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>고인</label>
+                                        </div>
+                                        <div>
+                                            <span>모&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>고인</label>
+                                        </div>
+                                        <div>
+                                            <span>&nbsp;&nbsp;&nbsp;</span> <input type="text" class="small"/> <select><option>관계</option></select>
+                                        </div>
+                                        <div>
+                                            <span>&nbsp;&nbsp;&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>세례명</label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="el-row">
+                                <div class="el-row mobile-float">
                                     <div class="el-2 label">예약일시</div>
-                                    <div class="el-2"><select><option>관계</option></select></div>
-                                    <div class="el-2"><select><option>관계</option></select></div>
-                                    <div class="el-2"><input type="checkbox" id="test1"/><label>고인</label></div>
+                                    <div class="el-8">
+                                        <input type="text"class="small">
+                                        <select><option>시간선택</option></select>
+                                        <select><option>분표시안함</option></select>
+                                        <input type="checkbox" id="test1"/><label>음력</label>
+                                    </div>
                                 </div>
                                 <div class="el-row">
                                     <div class="el-2 label">예약장소</div>
@@ -430,7 +588,7 @@
     
                                 </div>
                                 <div class="el-row">
-                                    <div class="el-2 label">&nbsp;</div>
+                                    <div class="el-2 label pc">&nbsp;</div>
                                     <div class="el-8 btn-type">
                                         <input type="text" class="file-txt"readonly/>
                                         <input type="file" id="file1"/>
@@ -441,12 +599,12 @@
                             </div>
                         </div>
                         <div class="box sample">
-                            <p class="gray">
+                            <p class="gray" >
                                 <strong>고객님의 주문을 돕기 위한 미리보기 화면으로 실제 인쇄물과는 다를 수 있습니다.</strong><br>
                                 정확한 인쇄(초안) 화면은 주문진행 후 “초안보기”에서 확인하실 수 있습니다.
                             </p>
-                            <div style=" text-align: center;">
-                                <span style="font-size: 45px;">weddinginvitation</span>
+                            <div style="padding:70px 0 ;text-align: center;font-family: 'Nanum Myeongjo', serif;" style="">
+                                <span style="font-size: 45px; font-family: 'Nanum Myeongjo', serif;">weddinginvitation</span>
                                 <br><br>
                                 서로가 마주보며 다져온 사랑을<br>
                                 이제 함께 한 곳을 바라보며 걸어갈 수 있는<br>
@@ -482,6 +640,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="addArea1">
+
+                    </div>
                     <div class="row">
                         <div class="box count">
                             <h4>카드주문 인쇄선택</h4>
@@ -508,11 +669,11 @@
                                         <td>
                                             신랑 <input type="text"/>장 - 신부 <input type="text"/> 장
                                         </td>
-                                        <td>
-                                            <input type="text"/> 장
+                                        <td class="addForm">
+                                            <input type="text" class="addForm2"/> 장
                                         </td>
-                                        <td>
-                                            <input type="text"/> 장
+                                        <td >
+                                            <input type="text" class="addForm2"/> 장
                                         </td>
                                         <td>
                                             <input type="text"/> 장
@@ -520,10 +681,33 @@
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <div class="card-m order-info mobile">
+                                <div class="row-item">
+                                    <span>총수량</span>
+                                    <span> 무료 100장 + 추가 0장</span>
+                                </div>
+                                <div class="row-item">
+                                    <span>기본인쇄</span>
+                                    <span>신랑 <select style="width:40px"><option>0</option></select> 장 | 신부 <select style="width:40px"><option>0</option></select> 장</span>
+                                </div>
+                                <div class="row-item">
+                                    <span>추가인쇄1 </span>
+                                    <span><input type="text" style="width:100px" class="addForm2"/> 장</span>
+                                </div>
+                                <div class="row-item">
+                                    <span>추가인쇄2 </span>
+                                    <span><input type="text" style="width:100px" class="addForm2"/> 장</span>
+                                </div>
+                                <div class="row-item">
+                                    <span>백봉투 </span>
+                                    <span><input type="text" style="width:100px"/> 장</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
         
-                    <div class="row dual">
+                    <div class="row dual addAreaClone2">
                         <div class="box">
                             <h4>신랑봉투(기본인쇄)
                                 <span>
@@ -553,7 +737,7 @@
                                                 010
                                             </option>
                                         </select>
-                                        -<input type="text" style="width: 80px;">-<input type="text" style="width: 80px;">
+                                        - <input type="text" style="width: 80px;"> - <input type="text" style="width: 80px;">
                                     </div>
                                     
                                 </div>
@@ -565,7 +749,7 @@
                                                 010
                                             </option>
                                         </select>
-                                        -<input type="text" style="width: 80px;">-<input type="text" style="width: 80px;">
+                                        - <input type="text" style="width: 80px;"> - <input type="text" style="width: 80px;">
                                     </div>
                                     
                                 </div>
@@ -573,15 +757,23 @@
                                 <div class="el-row">
                                     <div class="el-2 label">보내는사람</div>
                                     <div class="el-8">
-                                        <input  type="checkbox" id="test1"/><label class="">고인</label> <input type="text" class="small " placeholder="혼주성함(부)"/>
-                                        <input  type="checkbox" id="test1"/><label class="">고인</label> <input type="text" class="small " placeholder="혼주성함(모)"/>
-                                        <select class=""style="width: 60px;padding: 0;"><option>배상</option></select>
+                                        <div class="el-8 mobile info-pr">
+                                            <div>
+                                                <span>부&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>고인</label>
+                                            </div>
+                                            <div>
+                                                <span>모&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>고인</label>
+                                            </div>
+                                            <div>
+                                                <span>&nbsp;&nbsp;&nbsp;</span> <select><option>배상</option></select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="el-row">
                                     <div class="el-2 label">요금별납</div>
                                     <div class="el-8 float">
-                                        <select class=""style="width: 100px;padding: 0;"><option>요금별납인쇄안함</option></select>
+                                        <select class="mb-margin"style="width: 130px;padding: 0;"><option>요금별납인쇄안함</option></select>
                                         <input type="text" class="small"/>
                                         <select class=""style="width: 100px;padding: 0;"><option>우체국</option></select>
                                     </div>
@@ -600,7 +792,7 @@
                                 <strong>봉투 인쇄 미리보기</strong>><br>
                                 고객님의 주문을 돕기 위한 미리보기 화면이며, 실제 인쇄물과는 다를 수 있습니다.
                             </p>
-                            <div class="papeer-bg">
+                            <div class="papper-bg">
                                 <p>
                                     ○○시 ○○구 ○○동 ○○○○○번지<br>
                                     ○○아파트 ○○○동 ○○○호<br>
@@ -615,7 +807,7 @@
                     </div>
                     <div class="row dual">
                         <div class="box">
-                            <h4>신랑봉투(기본인쇄)
+                            <h4>신부봉투(기본인쇄)
                                 <span>
                                     <input type="checkbox" id="test"/><label for="test">백봉투(인쇄안함)</label>
                                 </span>
@@ -643,7 +835,7 @@
                                                 010
                                             </option>
                                         </select>
-                                        -<input type="text" style="width: 80px;">-<input type="text" style="width: 80px;">
+                                        - <input type="text" style="width: 80px;"> - <input type="text" style="width: 80px;">
                                     </div>
                                     
                                 </div>
@@ -655,7 +847,7 @@
                                                 010
                                             </option>
                                         </select>
-                                        -<input type="text" style="width: 80px;">-<input type="text" style="width: 80px;">
+                                        - <input type="text" style="width: 80px;"> - <input type="text" style="width: 80px;">
                                     </div>
                                     
                                 </div>
@@ -663,15 +855,23 @@
                                 <div class="el-row">
                                     <div class="el-2 label">보내는사람</div>
                                     <div class="el-8">
-                                        <input  type="checkbox" id="test1"/><label class="">고인</label> <input type="text" class="small " placeholder="혼주성함(부)"/>
-                                        <input  type="checkbox" id="test1"/><label class="">고인</label> <input type="text" class="small " placeholder="혼주성함(모)"/>
-                                        <select class=""style="width: 60px;padding: 0;"><option>배상</option></select>
+                                        <div class="el-8 mobile info-pr">
+                                            <div>
+                                                <span>부&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>고인</label>
+                                            </div>
+                                            <div>
+                                                <span>모&nbsp;</span> <input type="text" class="small"/> <input  type="checkbox" id="test1"/><label>고인</label>
+                                            </div>
+                                            <div>
+                                                <span>&nbsp;&nbsp;&nbsp;</span> <select><option>배상</option></select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="el-row">
                                     <div class="el-2 label">요금별납</div>
                                     <div class="el-8 float">
-                                        <select class=""style="width: 100px;padding: 0;"><option>요금별납인쇄안함</option></select>
+                                        <select class="mb-margin"style="width: 130px;padding: 0;"><option>요금별납인쇄안함</option></select>
                                         <input type="text" class="small"/>
                                         <select class=""style="width: 100px;padding: 0;"><option>우체국</option></select>
                                     </div>
@@ -690,7 +890,7 @@
                                 <strong>봉투 인쇄 미리보기</strong>><br>
                                 고객님의 주문을 돕기 위한 미리보기 화면이며, 실제 인쇄물과는 다를 수 있습니다.
                             </p>
-                            <div class="papeer-bg">
+                            <div class="papper-bg2">
                                 <p>
                                     ○○시 ○○구 ○○동 ○○○○○번지<br>
                                     ○○아파트 ○○○동 ○○○호<br>
@@ -702,6 +902,10 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="addArea2">
+
                     </div>
                 </div>
             </div>
@@ -739,6 +943,31 @@
     })
     $(".container.order .option-btn > div").on("mouseleave",function(){
         $(this).find(".hover-conts").hide()
+    })
+
+    $(".dual-page .side .arrow").on("click",function(){
+        if ($(this).hasClass("on")){
+            $(this).removeClass("on")
+            $(".pay-box .row-wrap").stop().slideUp(200)
+        }else{
+            $(this).addClass("on")
+            $(".pay-box .row-wrap").stop().slideDown(200)
+        }
+    })
+
+    $(".addForm1").on("keyup",function(e){
+        if($(this).val()!==null && $(".addArea1").find(".addAreaClone1").length == 0 ){
+            $(".addAreaClone1").clone().appendTo(".addArea1")
+        }else if ($(this).val()==""){
+            $(".addArea1").find(".addAreaClone1")[$(".addArea1").find(".addAreaClone1").length-1].remove()
+        }
+    })
+    $(".addForm2").on("keyup",function(e){
+        if($(this).val()!==null && $(".addArea2").find(".addAreaClone2").length == 0 ){
+            $(".addAreaClone2").clone().appendTo(".addArea2")
+        }else if ($(this).val()==""){
+            $(".addArea2").find(".addAreaClone2")[$(".addArea2").find(".addAreaClone2").length-1].remove()
+        }
     })
 </script>
 </html>
